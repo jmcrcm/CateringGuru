@@ -28,5 +28,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
+        
+        <!-- Row 3 -->
+        <ComboBox Grid.Row="3" Grid.Column="1" x:Name="FoodMenu"
+                  SelectedItem="{Binding Path=SelectedItem, Mode=OneWayToSource}"
+                  DisplayMemberPath="ItemName"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" x:Name="SelectedItem_ItemPrice"/>
     </Grid>
 </Window>

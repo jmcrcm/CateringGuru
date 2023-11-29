@@ -8,7 +8,7 @@ namespace CateringGuru.Models
 {
     public class MenuModel
     {
-        public int ItemName { get; set; }
-        public string ItemPrice { get; set; }
+        public string ItemName { get; set; }
+        public double ItemPrice { get; set; }
     }
 }
