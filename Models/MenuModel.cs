@@ -9,6 +9,6 @@ namespace CateringGuru.Models
     public class MenuModel
     {
         public string ItemName { get; set; }
-        public double ItemPrice { get; set; }
+        public decimal ItemPrice { get; set; }
     }
 }

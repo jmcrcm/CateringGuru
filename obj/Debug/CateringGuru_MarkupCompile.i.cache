@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\19513\source\repos\CateringGuru\obj\Debug\
+C:\Users\jmcrc\source\repos\CateringGuru\obj\Debug\
 CateringGuru
 none
 false
 DEBUG;TRACE
-C:\Users\19513\source\repos\CateringGuru\App.xaml
-1-305638381
+C:\Users\jmcrc\source\repos\CateringGuru\App.xaml
+3-592831048
 
-9-2010257082
-20-201809268
-Views\ShellView.xaml;
+131090101528
+20-147592062
+Views\InvoiceFormView.xaml;Views\QuoteFormView.xaml;Views\ShellView.xaml;
 
-False
+True
 

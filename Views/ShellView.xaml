@@ -14,6 +14,10 @@
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
@@ -28,11 +32,25 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        
-        <!-- Row 3 -->
-        <ComboBox Grid.Row="3" Grid.Column="1" x:Name="FoodMenu"
+
+        <!-- Row 4 -->
+        <TextBox Grid.Row="4" Grid.Column="1" Width="100"/>
+        <ComboBox Grid.Row="4" Grid.Column="2" x:Name="FoodMenu" Width="200"
                   SelectedItem="{Binding Path=SelectedItem, Mode=OneWayToSource}"
                   DisplayMemberPath="ItemName"/>
-        <TextBlock Grid.Row="3" Grid.Column="2" x:Name="SelectedItem_ItemPrice"/>
+        <TextBlock Grid.Row="4" Grid.Column="3" x:Name="SelectedItem_ItemPrice" Width="50"/>
+
+        <!-- Row 5 -->
+        <Button x:Name="LoadQuoteForm" Grid.Row="5" Grid.Column="1" Width="100" Height="20">
+            Quote Form
+            </Button>
+        <Button x:Name="LoadInvoiceForm" Grid.Row="5" Grid.Column="2" Width="100" Height="20"> 
+            Invoice Form
+        </Button>
+
+            <!-- Row 6 -->
+        <ContentControl Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="5"
+                        x:Name="ActiveItem"/>
+
     </Grid>
 </Window>

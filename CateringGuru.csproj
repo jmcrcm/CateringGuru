@@ -78,7 +78,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\MenuModel.cs" />
+    <Compile Include="ViewModels\InvoiceFormViewModel.cs" />
+    <Compile Include="ViewModels\QuoteFormViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\InvoiceFormView.xaml.cs">
+      <DependentUpon>InvoiceFormView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuoteFormView.xaml.cs">
+      <DependentUpon>QuoteFormView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
@@ -112,6 +120,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\InvoiceFormView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuoteFormView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
